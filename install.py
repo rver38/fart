@@ -6,7 +6,9 @@ with open(rpath + "/__init__.py", "w+", encoding="utf-8") as f:
 	f.write("from .dec import dcr;from .enc import ecr")
 with open(rpath + "/dec.py", "w+", encoding="utf-8") as dec:
 	r = requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/rverflow/dec.py")
-	dec.write(r.content.decode())
+	r.encoding = "utf-8"
+	dec.write(r.content)
 with open(rpath + "/enc.py", "w+", encoding="utf-8") as enc:
 	r2 = requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/rverflow/enc.py")
-	enc.write(r2.content.decode())
+	r2.encoding = "utf-8"
+	enc.write(r2.content)
