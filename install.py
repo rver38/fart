@@ -14,6 +14,3 @@ with open(rpath + "/enc.py", "w+", encoding="utf-8") as enc:
 	r2.encoding = "utf-8"
 	res2 = r2.content.decode()
 	enc.write(res2)
-'fart'
-print("if this file crashes, try reopening it, it should reload the module and work again")
-time.sleep(3)
