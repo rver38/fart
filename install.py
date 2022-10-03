@@ -14,3 +14,4 @@ with open(rpath + "/enc.py", "w+", encoding="utf-8") as enc:
 	r2.encoding = "utf-8"
 	r2 = r2.content.decode()
 	enc.write(r2)
+'fart'
