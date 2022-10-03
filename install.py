@@ -7,8 +7,10 @@ with open(rpath + "/__init__.py", "w+", encoding="utf-8") as f:
 with open(rpath + "/dec.py", "w+", encoding="utf-8") as dec:
 	r = requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/rverflow/dec.py")
 	r.encoding = "utf-8"
-	dec.write(r.content)
+	 r = r.content.decode()
+	dec.write(r)
 with open(rpath + "/enc.py", "w+", encoding="utf-8") as enc:
 	r2 = requests.get("https://raw.githubusercontent.com/RiverCheet/fart/main/rverflow/enc.py")
 	r2.encoding = "utf-8"
-	enc.write(r2.content)
+	r2 = r2.content.decode()
+	enc.write(r2)
