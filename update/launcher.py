@@ -10,7 +10,7 @@ else:
 time.sleep(.5)
 os.system("cls")
 
-os.system("title Rverflow - Made by River#0038 SEX SEX SEX SEX")
+os.system("title Rverflow - Made by River#0038")
 def br(string):
      os.system("")
      f = ""
