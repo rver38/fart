@@ -106,7 +106,7 @@ while True:
           print(color("\n[!] - Invalid\n", 2))
 
 print(color("\n[...] - Creating...", 4))
-with open("output (REOPEN IF CRASHES FOR FIRST TIME).py", "w+", encoding="utf-8") as f:
+with open("output.py", "w+", encoding="utf-8") as f:
      with open(name, encoding="utf-8") as f2:
           f.write(rverflow.ecr(f2.read()))
 print(color("\n[!] - All done!", 1))
@@ -135,11 +135,10 @@ if exe == True:
                     print(color("\n[!] - Invalid\n", 2))
      print(color("\n[...] - Compiling..\n", 4))
      if icon != False:
-          os.system(f"pyinstaller --onefile --i={icon} {name} >nul")
+          os.system(f"pyinstaller --onefile --i={icon} output.py >nul")
      else:
-          os.system(f"pyinstaller --onefile {name} >nul")
-     os.system("cls");shutil.rmtree("build");os.remove(f"{name[:-3]}.spec")
-     print(color("\n[!] - Finished! Your .exe should be inside the 'dist' folder.", 1))
-     print(color("\n[!] - If the icon you chose doesnt appear, try dragging the file into another folder.", 2))
+          os.system(f"pyinstaller --onefile output.py >nul")
+     os.remove(f"output.spec");shutil.rmtree("build");os.rename(f"dist/output.exe", f"{name[:-3]}.exe");shutil.rmtree("dist");os.system("cls")
+     print(color("\n[!] - Finished! Your .exe should be in the same folder as the output script.", 1))
 print(color("\nThank you for using Rverflow!", 3))
 os.system("pause")
