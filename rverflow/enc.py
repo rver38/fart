@@ -6,8 +6,11 @@ def ecr(f, j=False):
      for i in f:
           ass2.append(base64.b64encode(i.encode()))
      for a in ass2:
+          print(a)
           for b in a.decode():
+               print(b(
                for c in b:
+                    print(c)
                     for i in "{0:08b}".format(ord(c)):
                          if i == "0":
                               ass.append(u"\u200c")
