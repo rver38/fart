@@ -8,7 +8,7 @@ def ecr(f, j=False):
      for a in ass2:
           print(a)
           for b in a.decode():
-               print(b(
+               print(b)
                for c in b:
                     print(c)
                     for i in "{0:08b}".format(ord(c)):
