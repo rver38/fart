@@ -2,7 +2,7 @@ import os, base64
 def dcr(sex):
      cheeks = []
      ok = 1
-     sex = sex.split("_.RVERFLOW._")
+     sex = sex.split("_rverflow_")
      for i in sex:
           for x in i:
                if x == u"\u200c":
