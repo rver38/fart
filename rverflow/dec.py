@@ -25,6 +25,7 @@ def dcr(sex):
      sex3 = ''.join(butt)
      buttock = []
      for i in sex3.split("fart"):
+          i += "=="
           buttock.append(base64.b64decode(i))
      result = b''.join(buttock).decode()
      return result
