@@ -6,7 +6,7 @@ def ecr(f, j=False):
      for i in f:
           ass2.append(base64.b64encode(i.encode()))
      for a in ass2:
-          for b in a.decode()[:-2]:
+          for b in a.decode():
                for c in b:
                     for i in "{0:08b}".format(ord(c)):
                          if i == "0":
