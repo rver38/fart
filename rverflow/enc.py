@@ -13,7 +13,7 @@ def ecr(f, j=False):
                               ass.append(u"\u200c")
                          elif i == "1":
                               ass.append(u"\ufeff")
-                    ass.append("_.RVERFLOW._")
+                    ass.append("_rverflow_")
      ass.append("'))\nexcept Exception as error:\n     print(Fore.RED + f'''your script threw an error:\n{error}''');os.system('pause');exit()")
      sex = '‭'.join(ass)
      return sex
